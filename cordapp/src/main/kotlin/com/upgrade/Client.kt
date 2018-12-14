@@ -11,9 +11,7 @@ fun main(args: Array<String>) {
 }
 
 /**
- *  A utility demonstrating the contract upgrade process.
- *  In this case, we are upgrading the states' contracts, but not the states
- *  themselves.
+ *  A utility demonstrating the contract and state upgrade process.
  **/
 private class UpgradeContractStateClient {
     companion object {

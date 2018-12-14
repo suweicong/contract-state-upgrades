@@ -5,7 +5,7 @@ import net.corda.core.identity.AbstractParty
 import net.corda.core.transactions.LedgerTransaction
 
 // Upgraded contracts must implement the UpgradedContract interface.
-// We're not upgrading the state, so we pass the same state as the input and output state.
+// We're also upgrading the state, so we pass the references to the old and new state as the input and output state.
 open class NewContractAndState : UpgradedContract<OldState, NewContractAndState.NewState> {
     companion object {
         val id = "com.upgrade.NewContractAndState"
@@ -13,7 +13,7 @@ open class NewContractAndState : UpgradedContract<OldState, NewContractAndState.
 
     override val legacyContract = OldContract.id
 
-    // We're upgrading the state, so we modify the OldState.
+    // We're upgrading the state as well, so we modify the OldState.
     override fun upgrade(state: OldState) = NewContractAndState.NewState(state.a, state.b, 1)
 
     // Definition of the new state

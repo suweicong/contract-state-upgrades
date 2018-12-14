@@ -4,14 +4,14 @@
 
 # Contract and State Upgrades CorDapp
 
-This CorDapp shows the end-to-end process of upgrading contracts in Corda.
+This CorDapp shows the end-to-end process of upgrading contracts & state simultaneously in Corda.
 
 The upgrade takes place in four stages:
 
 1. Create a replacement contract and state implementing the `UpgradedContract` interface
 2. Bundle the replacement contract and state into a CorDapp and install it on each node
 3. For each state you wish to upgrade the contract of, authorise the contract and state upgrade for that state on each node
-4. On a single node, authorise the contract upgrade for each state you wish to upgrade the contract of
+4. On a single node, authorise the upgrade for each state you wish to upgrade the contract and state of
 
 # Pre-requisites:
   

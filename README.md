@@ -30,8 +30,7 @@ Run the following command from the project's root folder:
 * Unix/Mac OSX: `./gradlew runUpgradeContractStateClient`
 * Windows: `gradlew runUpgradeContractStateClient`
 
-This will run the contract and state upgrade client defined here:
-https://github.com/corda/contract-upgrades/blob/release-V3/cordapp/src/main/kotlin/com/upgrade/Client.kt. This
+This will run the contract and state upgrade client defined [HERE](https://github.com/amolpednekar/contract-state-upgrades/blob/master/cordapp/src/main/kotlin/com/upgrade/Client.kt). This
 client will:
 
 1. Connect to PartyA and PartyB's nodes via RPC

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="contract-state-upgrades_integrationTest" target="1.8" />
+      <module name="contract-state-upgrades_main" target="1.8" />
+      <module name="contract-state-upgrades_test" target="1.8" />
+      <module name="contract-upgrades_integrationTest" target="1.8" />
+      <module name="contract-upgrades_main" target="1.8" />
+      <module name="contract-upgrades_test" target="1.8" />
+      <module name="cordapp-contracts-states_main" target="1.8" />
+      <module name="cordapp-contracts-states_test" target="1.8" />
+      <module name="cordapp-new-contract-state_main" target="1.8" />
+      <module name="cordapp-new-contract-state_test" target="1.8" />
+      <module name="cordapp-new-contract_main" target="1.8" />
+      <module name="cordapp-new-contract_test" target="1.8" />
+      <module name="cordapp_main" target="1.8" />
+      <module name="cordapp_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

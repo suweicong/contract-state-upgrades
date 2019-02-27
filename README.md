@@ -70,7 +70,8 @@ Below are the steps for Mac, #todo: add Windows command
 
 8. using bootrapper to whitelist the new cordapp in network parameter, https://docs.corda.net/network-bootstrapper.html
  place the boostrapper into the folder /contract-state-upgrades/build/nodes, and in terminal, go to the folder /contract-state-upgrades/build/nodes where the bootstarpper is located, and run `java -jar corda-network-bootstrapper-3.2-corda-executable\ \(2\).jar .`
-  note: the bootstrapper version seems to be important, if a proper version bootstrapper is not used, the bootstrapping might not be working. let me know if you want to get the one i am using for this sample
+  
+note: the bootstrapper version seems to be important, if a proper version bootstrapper is not used, the bootstrapping might not be working. let me know if you want to get the one i am using for this sample
 
 9. if boostrapping is completed, uncomment the code in step 1.3, and add back the folder deleted in step 1.2 if it is deleted. save the changes
 

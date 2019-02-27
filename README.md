@@ -31,7 +31,7 @@ Below are the steps for Mac, #todo: add Windows command
 
 1.1 comment the part highlighted https://github.com/suweicong/contract-state-upgrades/blob/v1/cordapp/src/main/kotlin/com/upgrade/Client.kt#L38-L80
   
-1.2 delete the folder "cordapp-new-contract-state" under the project folder
+1.2 delete the folder "cordapp-new-contract-state" under the project folder 
 
 1.3 comment everything related to "cordapp-new-contract-state", i.e. 
 https://github.com/suweicong/contract-state-upgrades/blob/v1/build.gradle#L81
@@ -55,12 +55,15 @@ https://github.com/suweicong/contract-state-upgrades/blob/v1/cordapp/build.gradl
 
 7. go to partyA's cordapp folder in contract-state-upgrades-2 new project folder, i.e. /contract-state-upgrades-2/build/nodes/PartyA/cordapps and copy the all the cordapps to all nodes' cordapp folder in contract-state-upgrades project folder
 
-8. using bootrapper to whitelist the new cordapp in network parameter, i am using the OS 3.2 bootstrapper https://ci-artifactory.corda.r3cev.com/artifactory/corda-releases/net/corda/corda-network-bootstrapper/3.2-corda/corda-network-bootstrapper-3.2-corda-executable.jar
- download and place the boostrapper into the folder /contract-state-upgrades/build/nodes, and in terminal, go to the folder /contract-state-upgrades/build/nodes where the bootstarpper is located, and run `java -jar corda-network-bootstrapper-3.2-corda-executable\ \(2\).jar .`
+8. using bootrapper to whitelist the new cordapp in network parameter, https://docs.corda.net/network-bootstrapper.html
+ place the boostrapper into the folder /contract-state-upgrades/build/nodes, and in terminal, go to the folder /contract-state-upgrades/build/nodes where the bootstarpper is located, and run `java -jar corda-network-bootstrapper-3.2-corda-executable\ \(2\).jar .`
+  note: the bootstrapper version seems to be important, if a proper version bootstrapper is not used, the bootstrapping might not be working
 
 9. if boostrapping is completed, call runnodes again and spin the nodes and notary again
 
-10. 6. in PartyA's and PartyB's shell, run `run setFlowsDrainingModeEnabled enabled: false` to undo drain the flows for both PartyA and PartyB.
+10. uncomment the code in step 1.3
+
+11. in PartyA's and PartyB's shell, run `run setFlowsDrainingModeEnabled enabled: false` to undo drain the flows for both PartyA and PartyB.
 
 11. 
 

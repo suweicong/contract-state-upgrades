@@ -4,7 +4,7 @@
 
 # Contract and State Upgrades CorDapp
 
-This CorDapp shows the end-to-end process of upgrading contracts & state simultaneously in Corda, in explicit mode, in local mock-network. Specially, when the contract is upgraded, the state remains the same. 
+This CorDapp shows the end-to-end process of upgrading contracts & state simultaneously in Corda, in explicit mode, with a local mock-network. Specially, when the contract is upgraded, the state remains the same. 
 
 The upgrade takes place in four stages:
 
@@ -35,10 +35,15 @@ Below are the steps for Mac, #todo: add Windows command
 
 1.3 comment everything related to "cordapp-new-contract-state", i.e. 
 https://github.com/suweicong/contract-state-upgrades/blob/v1/build.gradle#L81
+
 https://github.com/suweicong/contract-state-upgrades/blob/v1/build.gradle#L111
+
 https://github.com/suweicong/contract-state-upgrades/blob/v1/build.gradle#L124
+
 https://github.com/suweicong/contract-state-upgrades/blob/v1/build.gradle#L138
+
 https://github.com/suweicong/contract-state-upgrades/blob/v1/settings.gradle#L3
+
 https://github.com/suweicong/contract-state-upgrades/blob/v1/cordapp/build.gradle#L48
  
 2. go to the contract-state-upgrades project folder, and run `./gradlew clean deployNodes`, followed by `./build/nodes/runnodes` to spin up nodes

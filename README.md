@@ -55,7 +55,7 @@ Below are the steps for Mac, #todo: add Windows command
 4. copy the entire original project folder, maybe rename as contract-state-upgrade-2 in this example, only comment the part highlighted https://github.com/suweicong/contract-state-upgrades/blob/v1/cordapp/src/main/kotlin/com/upgrade/Client.kt#L32-L36
 
 5. go to the contract-state-upgrades-2 new project folder, and run `./gradlew clean deployNodes`
-(note: if you face permission issue, please run `chmod a+x ./gradlew`) 
+	(note: if you face permission issue, please run `chmod a+x ./gradlew`) 
 
 6. in PartyA's and PartyB's shell, run `run setFlowsDrainingModeEnabled enabled: true` to drain the flows for both PartyA and PartyB. Then run `bye` to shutdown all nodes including notary 
 
@@ -71,7 +71,7 @@ Below are the steps for Mac, #todo: add Windows command
 8. using bootrapper to whitelist the new cordapp in network parameter, https://docs.corda.net/network-bootstrapper.html
  place the boostrapper into the folder /contract-state-upgrades/build/nodes, and in terminal, go to the folder /contract-state-upgrades/build/nodes where the bootstarpper is located, and run `java -jar corda-network-bootstrapper-3.2-corda-executable\ \(2\).jar .`
   
-note: the bootstrapper version seems to be important, if a proper version bootstrapper is not used, the bootstrapping might not be working. let me know if you want to get the one i am using for this sample
+	note: the bootstrapper version seems to be important, if a proper version bootstrapper is not used, the bootstrapping might not be working. let me know if you want to get the one i am using for this sample
 
 9. if boostrapping is completed, uncomment the code in step 1.3, and add back the folder deleted in step 1.2 if it is deleted. save the changes
 

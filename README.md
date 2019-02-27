@@ -34,6 +34,7 @@ Below are the steps for Mac, #todo: add Windows command
 1.2 delete the folder "cordapp-new-contract-state" under the project folder (this is optional because step 1.3 should take care of this; you might want to backup this because you will need to add this back in later step)
 
 1.3 comment everything related to "cordapp-new-contract-state", i.e. 
+	
 	https://github.com/suweicong/contract-state-upgrades/blob/v1/build.gradle#L81
 
 	https://github.com/suweicong/contract-state-upgrades/blob/v1/build.gradle#L111

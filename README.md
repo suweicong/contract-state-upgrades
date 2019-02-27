@@ -60,10 +60,13 @@ Below are the steps for Mac, #todo: add Windows command
 6. in PartyA's and PartyB's shell, run `run setFlowsDrainingModeEnabled enabled: true` to drain the flows for both PartyA and PartyB. Then run `bye` to shutdown all nodes including notary 
 
 7.1 go to partyA's cordapp folder in contract-state-upgrades-2 new project folder, i.e. /contract-state-upgrades-2/build/nodes/PartyA/cordapps, and copy all jar files to all nodes' cordapp folder under contract-state-upgrades project folder
+
 7.2 copy the network-parameters file, where you can find under a node's folder, e.g. /contract-state-upgrades-2/build/nodes/PartyA, and replace all the network-parameters file in all nodes'folder including notary under contract-state-upgrades project folder
+
 7.3 copy the content in whitelist.txt located in /contract-state-upgrades-2/build/nodes, and add into the whitelist.txt in /contract-state-upgrades/build/nodes, so you might have something like:
-com.upgrade.OldContract:1EDB4A7F8A5DBD2FDBF5E675062B84E20B990C3BFE8525DB3C7936D9B06D788D, 08110F6B26BAC2C9012C446979B372A213048F94DDA2F0CE6FA6C6427DC7D001
-com.upgrade.NewContractAndState:753A233F436F1818F4A4B510354F573963B79BE29E8D459B979641AAD7AEEB96
+
+	com.upgrade.OldContract:1EDB4A7F8A5DBD2FDBF5E675062B84E20B990C3BFE8525DB3C7936D9B06D788D, 08110F6B26BAC2C9012C446979B372A213048F94DDA2F0CE6FA6C6427DC7D001
+	com.upgrade.NewContractAndState:753A233F436F1818F4A4B510354F573963B79BE29E8D459B979641AAD7AEEB96
 
 8. using bootrapper to whitelist the new cordapp in network parameter, https://docs.corda.net/network-bootstrapper.html
  place the boostrapper into the folder /contract-state-upgrades/build/nodes, and in terminal, go to the folder /contract-state-upgrades/build/nodes where the bootstarpper is located, and run `java -jar corda-network-bootstrapper-3.2-corda-executable\ \(2\).jar .`
